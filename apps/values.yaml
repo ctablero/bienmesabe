@@ -7,7 +7,7 @@ application1:
     namespace: "default"
     server: "https://kubernetes.default.svc"
   source:
-    path: "apps"
+    path: "webserver"
     repourl: "https://github.com/ctablero/majarete.git"
     targetrevision: "HEAD"
   syncPolicy:
@@ -22,22 +22,7 @@ application2:
     namespace: "default"
     server: "https://kubernetes.default.svc"
   source:
-    path: "apps"
-    repourl: "https://github.com/ctablero/majarete.git"
-    targetrevision: "HEAD"
-  syncPolicy:
-    automated:
-      allowEmpty: false
-      prune: true
-      selfHeal: true
-
-application3:
-  name: "my-application3"
-  destination:
-    namespace: "default"
-    server: "https://kubernetes.default.svc"
-  source:
-    path: "apps"
+    path: "pvs"
     repourl: "https://github.com/ctablero/majarete.git"
     targetrevision: "HEAD"
   syncPolicy:
