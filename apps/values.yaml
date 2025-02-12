@@ -22,7 +22,7 @@ application2:
     namespace: "default"
     server: "https://kubernetes.default.svc"
   source:
-    path: "webserver"
+    path: "pvs"
     repourl: "https://github.com/ctablero/majarete.git"
     targetrevision: "HEAD"
   syncPolicy:
