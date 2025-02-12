@@ -30,18 +30,3 @@ application2:
       allowEmpty: false
       prune: true
       selfHeal: true
-
-application3:
-  name: "my-application3"
-  destination:
-    namespace: "default"
-    server: "https://kubernetes.default.svc"
-  source:
-    path: "pvs"
-    repourl: "https://github.com/ctablero/majarete.git"
-    targetrevision: "HEAD"
-  syncPolicy:
-    automated:
-      allowEmpty: false
-      prune: true
-      selfHeal: true
