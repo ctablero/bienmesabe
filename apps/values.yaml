@@ -2,7 +2,7 @@ project:
   name: "default"
 
 application1:
-  name: "my-application1"
+  name: "titan"
   destination:
     namespace: "default"
     server: "https://kubernetes.default.svc"
@@ -17,7 +17,7 @@ application1:
       selfHeal: true
 
 application2:
-  name: "my-application2"
+  name: "sentinela"
   destination:
     namespace: "default"
     server: "https://kubernetes.default.svc"
