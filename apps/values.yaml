@@ -30,3 +30,18 @@ application2:
       allowEmpty: false
       prune: true
       selfHeal: true
+
+application3:
+  name: "colossus"
+  destination:
+    namespace: "default"
+    server: "https://kubernetes.default.svc"
+  source:
+    path: "webapp"
+    repourl: "https://github.com/ctablero/cotufa.git"
+    targetRevision: "HEAD"
+  syncPolicy:
+    automated:
+      allowEmpty: false
+      prune: true
+      selfHeal: true
