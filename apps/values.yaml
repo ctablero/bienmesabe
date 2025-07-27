@@ -53,7 +53,7 @@ application4:
     server: "https://kubernetes.default.svc"
   source:
     path: "network"
-    repourl: "https://github.com/ctablero/quesillo.git"
+    repourl: "git@github.com:ctablero/quesillo.git"
     targetRevision: "HEAD"
   syncPolicy:
     automated:
