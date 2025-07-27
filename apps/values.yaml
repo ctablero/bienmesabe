@@ -45,3 +45,18 @@ application3:
       allowEmpty: false
       prune: true
       selfHeal: true
+
+application4:
+  name: "cyclop"
+  destination:
+    namespace: "default"
+    server: "https://kubernetes.default.svc"
+  source:
+    path: "network"
+    repourl: "https://github.com/ctablero/quesillo.git"
+    targetRevision: "HEAD"
+  syncPolicy:
+    automated:
+      allowEmpty: false
+      prune: true
+      selfHeal: true
