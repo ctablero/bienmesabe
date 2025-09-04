@@ -4,57 +4,12 @@ project:
 application1:
   name: "titan"
   destination:
-    namespace: "default"
+    namespace: "acme"
     server: "https://0.0.0.0:42497"
   source:
     path: "webserver"
     repourl: "https://github.com/ctablero/majarete.git"
     targetrevision: "HEAD"
-  syncPolicy:
-    automated:
-      allowEmpty: false
-      prune: true
-      selfHeal: true
-
-application2:
-  name: "sentinela"
-  destination:
-    namespace: "default"
-    server: "https://0.0.0.0:42497"
-  source:
-    path: "pvs"
-    repourl: "https://github.com/ctablero/majarete.git"
-    targetrevision: "HEAD"
-  syncPolicy:
-    automated:
-      allowEmpty: false
-      prune: true
-      selfHeal: true
-
-application3:
-  name: "colossus"
-  destination:
-    namespace: "default"
-    server: "https://0.0.0.0:42497"
-  source:
-    path: "webapp"
-    repourl: "https://github.com/ctablero/cotufa.git"
-    targetRevision: "HEAD"
-  syncPolicy:
-    automated:
-      allowEmpty: false
-      prune: true
-      selfHeal: true
-
-application4:
-  name: "cyclop"
-  destination:
-    namespace: "default"
-    server: "https://0.0.0.0:42497"
-  source:
-    path: "network"
-    repourl: "git@github.com:ctablero/quesillo.git"
-    targetRevision: "HEAD"
   syncPolicy:
     automated:
       allowEmpty: false
