@@ -4,8 +4,8 @@ project:
 application1:
   name: "titan"
   destination:
-    namespace: "default"
-    server: "https://kubernetes.default.svc"
+    namespace: "acme"
+    server: "https://192.168.1.3:42497"
   source:
     path: "webserver"
     repourl: "https://github.com/ctablero/majarete.git"
